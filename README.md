@@ -158,6 +158,8 @@ conda activate HunyuanCustom
 conda install pytorch==2.4.0 torchvision==0.19.0 torchaudio==2.4.0 pytorch-cuda=11.8 -c pytorch -c nvidia
 # For CUDA 12.4
 conda install pytorch==2.4.0 torchvision==0.19.0 torchaudio==2.4.0 pytorch-cuda=12.4 -c pytorch -c nvidia
+# For CUDA 12.9
+pip3 install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cu129
 
 # 4. Install pip dependencies
 python -m pip install -r requirements.txt
