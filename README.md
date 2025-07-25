@@ -163,7 +163,7 @@ conda install pytorch==2.4.0 torchvision==0.19.0 torchaudio==2.4.0 pytorch-cuda=
 python -m pip install -r requirements.txt
 # 5. Install flash attention v2 for acceleration (requires CUDA 11.8 or above)
 python -m pip install ninja
-python -m pip install git+https://github.com/Dao-AILab/flash-attention.git@v2.6.3
+pip install git+https://github.com/Dao-AILab/flash-attention.git@v2.6.3 --no-build-isolation
 ```
 
 In case of running into float point exception(core dump) on the specific GPU type, you may try the following solutions:
@@ -178,7 +178,7 @@ pip uninstall -r requirements.txt  # uninstall all packages
 pip install torch==2.4.0 --index-url https://download.pytorch.org/whl/cu118
 pip install -r requirements.txt
 pip install ninja
-pip install git+https://github.com/Dao-AILab/flash-attention.git@v2.6.3
+pip install git+https://github.com/Dao-AILab/flash-attention.git@v2.6.3 --no-build-isolation
 ```
 
 Additionally, you can also use HunyuanVideo Docker image. Use the following command to pull and run the docker image.
